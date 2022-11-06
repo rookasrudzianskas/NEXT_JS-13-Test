@@ -9,7 +9,7 @@ const Search = ({}) => {
     const handleSearch = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setSearch('');
-        router.push(`/search?q=${search}`);
+        router.push(`/search/${search}`);
     }
 
     return (
