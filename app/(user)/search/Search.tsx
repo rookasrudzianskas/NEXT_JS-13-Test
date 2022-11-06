@@ -13,7 +13,7 @@ const Search = ({}) => {
     }
 
     return (
-        <form action="" onSubmit={handleSearch}>
+        <form action="app/(user)/search/Search" onSubmit={handleSearch}>
             <input
                 type="text"
                 value={search}

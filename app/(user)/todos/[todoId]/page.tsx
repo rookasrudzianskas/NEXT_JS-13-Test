@@ -1,5 +1,5 @@
 import React from 'react';
-import {Todo} from "../../../typings";
+import {Todo} from "../../../../typings";
 import {notFound} from "next/navigation";
 
 export const dynamicParams = true;

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Todo} from "../../typings";
+import {Todo} from "../../../typings";
 import Link from "next/link";
 
 const fetchTodos = async () => {
