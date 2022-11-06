@@ -37,10 +37,10 @@ export async function generateStaticParams() {
     const res = await fetch('https://jsonplaceholder.typicode.com/todos');
     const todos: Todo[] = await res.json();
 
-    return todos.map((todo) => ({
-        params: {
-            // this has to be the STRING!! version of the id
-            todoId: todo.id.toString(),
-        },
+    const trimmedTodos = todos.slice(0, 10);
+
+    return trimmedTodos.map((todo) => ({
+        // this has to be the STRING!! version of the id
+        todoId: todo.id.toString(),
     }));
 }
