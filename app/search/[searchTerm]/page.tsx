@@ -20,6 +20,7 @@ type SearchResults = {
 
 const Search = async (searchTerm: string) => {
     const response = await fetch(`https://serpapi.com/search.json?q=${searchTerm}&api_key=${process.env.API_KEY}`);
+    // throw new Error('Not implemented');
     const data: SearchResults = await response.json();
     return data;
 }
