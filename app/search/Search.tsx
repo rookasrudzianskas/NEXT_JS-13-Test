@@ -20,7 +20,9 @@ const Search = ({}) => {
                 placeholder="Enter the Search Term"
                 onChange={(e) => setSearch(e.target.value)}
             />
-            <button type="submit" className="btn">
+            <button
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                type="submit">
                 Search
             </button>
         </form>
