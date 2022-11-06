@@ -9,7 +9,9 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <head></head>
+      <head>
+          <title>Rokas Website</title>
+      </head>
       <body>
         <Header />
 
